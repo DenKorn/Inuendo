@@ -7,9 +7,26 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
+        'session' => [
+            'class' => 'yii\web\DbSession',
+            // 'db' => 'mydb',
+            // 'sessionTable' => 'my_session',
+        ],
+        'i18n' => [
+            'translations' => [
+                'app' => [
+                    'class' => 'yii\i18n\DbMessageSource',
+                    'sourceMessageTable'=>'{{%source_message}}',
+                    'messageTable'=>'{{%message}}',
+                    'enableCaching' => true,
+                    'cachingDuration' => 10,
+                    'forceTranslation'=>true,
+                ]
+            ],
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'shit',
+            'cookieValidationKey' => 'shit'
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -37,15 +54,16 @@ $config = [
                 ],
             ],
         ],
+        
         'db' => require(__DIR__ . '/db.php'),
-        /*
+/*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            //'suffix' => '.html',
             'rules' => [
             ],
-        ],
-        */
+        ] */
     ],
     'params' => $params,
 ];
