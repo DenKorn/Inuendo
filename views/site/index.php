@@ -11,6 +11,14 @@ $this->title = 'My Yii Application';
 
         <p class="lead">You have successfully created your Yii-powered application.</p>
 
+        <p class="lead"><?php
+           // Yii::$app->language = "ru-Ru";
+            echo Yii::t("app","landing_aboutus_header") ?></p>
+        
+        <p class="lead"><?php
+            echo Yii::t("app","landing_features_header") ?></p>
+
+
         <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
     </div>
 

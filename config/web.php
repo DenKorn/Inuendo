@@ -3,9 +3,10 @@
 $params = require(__DIR__ . '/params.php');
 
 $config = [
-    'id' => 'basic',
+    'id' => 'Inuendo interactive advertising service',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'language' => 'ru-Ru', //eng-En
     'components' => [
         'session' => [
             'class' => 'yii\web\DbSession',
