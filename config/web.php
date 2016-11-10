@@ -3,31 +3,13 @@
 $params = require(__DIR__ . '/params.php');
 
 $config = [
-    'id' => 'Inuendo interactive advertising service',
+    'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-    'language' => 'ru-Ru', //eng-En
     'components' => [
-        'session' => [
-            'class' => 'yii\web\DbSession',
-            // 'db' => 'mydb',
-            // 'sessionTable' => 'my_session',
-        ],
-        'i18n' => [
-            'translations' => [
-                'app' => [
-                    'class' => 'yii\i18n\DbMessageSource',
-                    'sourceMessageTable'=>'{{%source_message}}',
-                    'messageTable'=>'{{%message}}',
-                    'enableCaching' => true,
-                    'cachingDuration' => 10,
-                    'forceTranslation'=>true,
-                ]
-            ],
-        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'shit'
+            'cookieValidationKey' => 'AUPzHJ9ENGiuV7QYDIVXyQVJKxsh-5lm',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -55,16 +37,15 @@ $config = [
                 ],
             ],
         ],
-        
         'db' => require(__DIR__ . '/db.php'),
-/*
+        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            //'suffix' => '.html',
             'rules' => [
             ],
-        ] */
+        ],
+        */
     ],
     'params' => $params,
 ];
