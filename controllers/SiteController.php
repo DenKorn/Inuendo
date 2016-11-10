@@ -11,8 +11,8 @@ class SiteController extends Controller
 {
     public function actionIndex()
     {
-        var_dump(Yii::$app->user->identity);die(); //информация о пользователе
         return $this->render('index');
+        //return var_export(Yii::$app->user->identity); //информация о пользователе
     }
 
     public function actionLogout()
