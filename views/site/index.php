@@ -1,5 +1,4 @@
 <?php
-
 /* @var $this yii\web\View */
 
 $this->title = 'My Yii Application';
@@ -12,11 +11,12 @@ $this->title = 'My Yii Application';
         <p class="lead">You have successfully created your Yii-powered application.</p>
 
         <p class="lead"><?php
-           // Yii::$app->language = "ru-Ru";
-            echo Yii::t("app","landing_aboutus_header") ?></p>
+            Yii::$app->language = "ru-Ru";
+            echo Yii::t("app","landing_about_us") ?></p>
         
         <p class="lead"><?php
-            echo Yii::t("app","landing_features_header") ?></p>
+            echo Yii::t("app","landing_main_benefits");
+            echo Yii::getAlias("@app");?></p>
 
 
         <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
