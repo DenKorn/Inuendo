@@ -1,0 +1,1 @@
+<h1>Application's main page</h1>

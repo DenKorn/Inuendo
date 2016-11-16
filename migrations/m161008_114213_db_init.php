@@ -11,8 +11,9 @@ class m161008_114213_db_init extends Migration
             $tableOptions = 'CHARACTER SET utf8 COLLATE utf8_general_ci ENGINE=InnoDB';
         }
 
-        $this->createTable('users', [
+        $this->createTable('user', [
             'id' => 'INT UNSIGNED NOT NULL AUTO_INCREMENT',
+            'name' => 'VARCHAR(45) NOT NULL',
             'login' => 'VARCHAR(45) NOT NULL',
             'password' => 'VARCHAR(45) NULL',
             'last_visit' => 'DATETIME NULL DEFAULT NOW()',
@@ -116,11 +117,11 @@ class m161008_114213_db_init extends Migration
 
         //Foreign keys
         $this->addForeignKey('fk_message_source_message', 'message', 'id', 'source_message', 'id','CASCADE','RESTRICT');
-        $this->addForeignKey('fk_ignore_list_users', 'ignore_list', 'user_id', 'users', 'id','CASCADE','RESTRICT');
-        $this->addForeignKey('fk_ban_list_users', 'ban_list', 'user_id', 'users', 'id','CASCADE','RESTRICT');
-        $this->addForeignKey('fk_support_dialogs_users_sender', 'support_dialogs', 'sender_id', 'users', 'id','CASCADE','RESTRICT');
-        $this->addForeignKey('fk_support_dialogs_users_recepient', 'support_dialogs', 'recepient_id', 'users', 'id','CASCADE','RESTRICT');
-        $this->addForeignKey('fk_advertisements_users', 'advertisements', 'owner_id', 'users', 'id','CASCADE','RESTRICT');
+        $this->addForeignKey('fk_ignore_list_user', 'ignore_list', 'user_id', 'user', 'id','CASCADE','RESTRICT');
+        $this->addForeignKey('fk_ban_list_user', 'ban_list', 'user_id', 'user', 'id','CASCADE','RESTRICT');
+        $this->addForeignKey('fk_support_dialogs_user_sender', 'support_dialogs', 'sender_id', 'user', 'id','CASCADE','RESTRICT');
+        $this->addForeignKey('fk_support_dialogs_user_recepient', 'support_dialogs', 'recepient_id', 'user', 'id','CASCADE','RESTRICT');
+        $this->addForeignKey('fk_advertisements_user', 'advertisements', 'owner_id', 'user', 'id','CASCADE','RESTRICT');
         $this->addForeignKey('fk_advert_moder_turn_advertisements', 'advert_moder_turn', 'advert_id', 'advertisements', 'id','CASCADE','RESTRICT');
         $this->addForeignKey('fk_advert_rents_advertisements', 'advert_rents', 'advert_id', 'advertisements', 'id','CASCADE','RESTRICT');
         $this->addForeignKey('fk_advert_rents_internet_platforms', 'advert_rents', 'platform_id', 'internet_platforms', 'id','CASCADE','RESTRICT');
@@ -142,7 +143,7 @@ class m161008_114213_db_init extends Migration
         $this->dropTable('paying_plans');
         $this->dropTable('internet_platforms');
         $this->dropTable('advertisements');
-        $this->dropTable('users');
+        $this->dropTable('user');
         return true;
     }
     

@@ -2,23 +2,28 @@
 
 namespace app\controllers;
 
+
 use Yii;
 use yii\web\Controller;
 use app\models\Signup;
 use app\models\Login;
+
 
 class SiteController extends Controller
 {
     public function actionIndex()
     {
         return $this->render('index');
-        //return var_export(Yii::$app->user->identity); //информация о пользователе
+    }
+
+    public function actionMainpage()
+    {
+        return $this->render('mainpage');
     }
 
     public function actionLogout()
     {
-        if(!Yii::$app->user->isGuest)
-        {
+        if (!Yii::$app->user->isGuest) {
             Yii::$app->user->logout();
             return $this->redirect(['login']);
         }
@@ -28,20 +33,18 @@ class SiteController extends Controller
     {
         $model = new Signup();
 
-        if(isset($_POST['Signup']))
-        {
+        if (isset($_POST['Signup'])) {
             $model->attributes = Yii::$app->request->post('Signup');
 
-            if($model->validate() && $model->signup())
-            {
-                return $this->goHome();
+            if ($model->validate() && $model->signup()) {
+                return $this->redirect(['login']);
             }
         }
-        return $this->render('signup',['model'=>$model]);
+        return $this->render('signup', ['model' => $model]);
     }
 
-
-//reg-check + login if y
+    //1. Проверить существует ли пользователь
+    //2. Внести пользователя в систему
 
     public function actionLogin()
     {
@@ -50,18 +53,16 @@ class SiteController extends Controller
             return $this->goHome();
         }
 
-// ^ уже залогиненного юзера на странице с формой логина редиректит на главную
-
         $login_model = new Login();
 
-        if(Yii::$app->request->post('login'))
+        if( Yii::$app->request->post('Login'))
         {
             $login_model->attributes = Yii::$app->request->post('Login');
 
             if($login_model->validate())
             {
                 Yii::$app->user->login($login_model->getUser());
-                return $this->goHome();
+                return $this->redirect(['mainpage']);
             }
         }
 
