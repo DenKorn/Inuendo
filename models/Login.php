@@ -6,7 +6,6 @@ use yii\base\Model;
 
 class Login extends Model
 {
-    public $name;
     public $login;
     public $password;
 
@@ -15,8 +14,7 @@ class Login extends Model
     {
         return [
 
-            [['name','login','password'],'required'],
-            ['name','string'],
+            [['login','password'],'required'],
             ['login','email'],
             ['password','validatePassword'] //функция для валидации пароля
         ];
