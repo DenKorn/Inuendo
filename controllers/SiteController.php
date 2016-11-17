@@ -12,13 +12,18 @@ use app\models\Login;
 class SiteController extends Controller
 {
     public function actionIndex()
-    {
+    {//ToDO goto landing page
         return $this->render('index');
     }
 
-    public function actionMainpage()
-    {
-        return $this->render('mainpage');
+    public function actionHelp()
+    {//ToDo goto help page
+        return $this->render('index');
+    }
+
+    public function actionStub($publishingAt) //время, на которое понадобится установить таймер
+    {//ToDo страница, загружающаяся для всех разделов, еще не реализованных
+        return $this->render('index');
     }
 
     public function actionLogout()
