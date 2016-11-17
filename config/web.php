@@ -1,15 +1,30 @@
 <?php
 
-$params = require(__DIR__ . '/params.php');
-
 $config = [
-    'id' => 'basic',
+    'id' => 'Inuendo interactive advertising service',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'language' => 'ru-Ru', //eng-En
     'components' => [
+        'session' => [
+            'class' => 'yii\web\DbSession',
+            // 'db' => 'mydb',
+            // 'sessionTable' => 'my_session',
+        ],
+        'i18n' => [
+            'translations' => [
+                'app' => [
+                    'class' => 'yii\i18n\DbMessageSource',
+                    'sourceMessageTable'=>'{{%source_message}}',
+                    'messageTable'=>'{{%message}}',
+                    'enableCaching' => true,
+                    'cachingDuration' => 10,
+                    'forceTranslation'=>true,
+                ]
+            ],
+        ],
         'request' => [
-            // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'AUPzHJ9ENGiuV7QYDIVXyQVJKxsh-5lm',
+            'cookieValidationKey' => 'shit'
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -21,13 +36,7 @@ $config = [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        'mailer' => [
-            'class' => 'yii\swiftmailer\Mailer',
-            // send all mails to a file by default. You have to set
-            // 'useFileTransport' to false and configure a transport
-            // for the mailer to send real emails.
-            'useFileTransport' => true,
-        ],
+
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
@@ -37,17 +46,18 @@ $config = [
                 ],
             ],
         ],
+        
         'db' => require(__DIR__ . '/db.php'),
-        /*
+
         'urlManager' => [
             'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
+            'showScriptName' => false
         ],
-        */
-    ],
-    'params' => $params,
+
+        'assetManager' => [
+            'appendTimestamp' => true,
+        ],
+    ]
 ];
 
 if (YII_ENV_DEV) {

@@ -115,7 +115,6 @@ class m161008_114213_db_init extends Migration
             'data' => 'BLOB'
         ],$tableOptions);
 
-        //Foreign keys
         $this->addForeignKey('fk_message_source_message', 'message', 'id', 'source_message', 'id','CASCADE','RESTRICT');
         $this->addForeignKey('fk_ignore_list_user', 'ignore_list', 'user_id', 'user', 'id','CASCADE','RESTRICT');
         $this->addForeignKey('fk_ban_list_user', 'ban_list', 'user_id', 'user', 'id','CASCADE','RESTRICT');
@@ -126,8 +125,6 @@ class m161008_114213_db_init extends Migration
         $this->addForeignKey('fk_advert_rents_advertisements', 'advert_rents', 'advert_id', 'advertisements', 'id','CASCADE','RESTRICT');
         $this->addForeignKey('fk_advert_rents_internet_platforms', 'advert_rents', 'platform_id', 'internet_platforms', 'id','CASCADE','RESTRICT');
         $this->addForeignKey('fk_advert_rents_paying_plans', 'advert_rents', 'pay_plan_id', 'paying_plans', 'id','CASCADE','RESTRICT');
-
-
     }
 
     public function down()
