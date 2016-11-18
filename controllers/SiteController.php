@@ -13,6 +13,7 @@ class SiteController extends Controller
 {
     public function actionIndex()
     {//ToDO goto landing page
+        Yii::$app->setAliases([ '@homeUrl' => 'localhost/Inuendo/web']);
         return $this->render('index');
     }
 

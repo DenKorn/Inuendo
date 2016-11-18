@@ -26,9 +26,9 @@ $config = [
         'request' => [
             'cookieValidationKey' => 'shit'
         ],
-        'aliases' => [
-          '@homeUrl' => 'localhost/Inuendo/web'
-        ],
+      /*  'aliases' => [
+
+        ],*/
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],

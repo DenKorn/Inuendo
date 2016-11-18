@@ -98,7 +98,7 @@
                 <div class="adbody">
                     <div class="adhead">
 
-                        <object class="kartinka" data="<?= Yii::getAlias("@homeUrl")."images/newpoly1.svg" ?>" type="image/svg+xml"></object>
+                        <object class="kartinka" data="<?= Yii::getAlias("@homeUrl")."/images/newpoly1.svg" ?>" type="image/svg+xml"></object>
 
                         <h3 class="zagol"><b>С нами интересно</b></h3>
                         <p>Мы гордимся тем, что предоставляем не только сухую рекламу.
