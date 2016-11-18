@@ -1,0 +1,145 @@
+@font-face {
+	font-family: Open Sans;
+	src: url(fonts/OS/OpenSans-Regular.otf)
+}
+html{
+	overflow-x: hidden;
+}
+body{
+	overflow-x: hidden;
+}
+.navbar .container{
+	display: block;
+	position: relative;
+	left: 4%;
+	
+	
+}
+.navbar{
+	box-shadow: 0 1px 5px rgba(0, 0, 0, .5);
+}
+.navbar-brand object{
+	width: 31pt;
+	height: 33pt;
+	margin-top: -8pt;
+}
+.nav li{
+	font-size: 14pt;
+	padding-left: 50pt;
+}
+.block1{
+	margin-top: -15pt;
+	height: 300pt;
+	background: #a7a5a5;
+}
+.pict{
+	margin: 0 auto;
+	width: 150pt;
+	height: 150pt;
+	padding: 40pt 40pt;
+}
+.text p{
+	margin: 0 auto;
+	font-size: 25pt;
+	text-align: center;
+}
+.text .t2{
+	text-align: center;
+	font-size: 15pt;
+	margin: 0 auto;
+}
+.pict object{
+	width: 60pt;
+	height:100pt;
+}
+.block2{
+	height: 500pt;
+	background: #ded9d9;
+}
+.line{
+	margin-top: 15pt;
+	margin-bottom: 15pt;
+	margin-left: -170pt;
+	width: 198%;
+	height: 30pt;
+	background: #fff;	
+}
+.setka ul{
+	text-align: left;
+	width: 212%;
+	margin-left: -200pt;
+}
+.setka ul:after{
+	word-spacing: 97px;
+	padding-left: 97px;
+}
+.setka ul li{
+	display: inline-block;
+	width: 141pt;
+	height: 120pt;
+	background: #fff;
+	margin-bottom: 10pt;
+	vertical-align: top;
+	text-align: center;
+	line-height: normal;
+	margin-right: 16pt;
+	cursor: 
+}
+.setka li{overflow: hidden;}
+.content{
+	width: 148pt;
+	height: 120pt;
+	cursor: pointer;
+	background: #fff;
+}
+.invis{
+	width: 158pt;
+	height: 120pt;
+	background: #fff;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	cursor: pointer;
+}
+.setka li:hover{
+	width:301pt;
+	
+}
+/*li .content:hover{
+	background: rgb(240, 101, 39); 
+}*/
+/*.invis:hover{
+	-webkit-transform: translate(158pt, 0);
+	-moz-transform: translate(158pt, 0);
+	-o-transform: translate(158pt, 0);
+}*/
+.end {
+	height: 100px;
+	background: #3c3c3c;
+	width: 100%;
+	display: block;
+	position: absolute;
+	
+	
+}
+.end p{
+	color: #fff;
+	font-size: 11pt;
+	margin-left: 130pt;
+	margin-top: 25pt;
+}
+.belem{
+	position: absolute;
+	z-index: 100;
+	margin-top: -300pt;
+}
+.elem{
+	position: absolute;
+	width: 200pt;
+	height: 150pt;
+	padding: 20pt 10pt 20pt;
+	z-index: 100;
+	background: #fff;
+}
+
+

@@ -1,0 +1,327 @@
+@font-face {
+	font-family: Open Sans;
+	src: url(fonts/OS/OpenSans-Regular.otf)
+}
+.navbar .container{
+	
+	display: block;
+	position: relative;
+	left: 1%;
+	
+	
+}
+.navbar{
+	box-shadow: 0 1px 5px rgba(0, 0, 0, .5);
+}
+.navbar-brand object{
+	width: 31pt;
+	height: 33pt;
+	margin-top: -8pt;
+	
+}
+.nav li{
+	
+	margin-left: 50px;
+	font-size: 14pt;
+	padding: 0 20pt 0;
+}
+.block1{
+	margin-top: -15pt;
+	height: 300pt;
+	background: #a7a5a5;
+}
+.pict{
+	margin: 0 auto;
+	width: 150pt;
+	height: 150pt;
+	padding: 40pt 40pt;
+}
+.text p{
+	margin: 0 auto;
+	font-size: 25pt;
+	text-align: center;
+}
+.text .t2{
+	text-align: center;
+	font-size: 15pt;
+	margin: 0 auto;
+}
+.pict object{
+	width: 60pt;
+	height:100pt;
+}
+.block2{
+	height: 400pt;
+	background: #ded9d9;
+}
+.blockban{
+	margin: 0 auto;
+	position: relative;
+	top:40px;
+	width: 100%;
+	height: 100%;
+	
+}
+.info {
+	width: 100%;
+	height: 200px;
+	margin: 20px 0 0;
+	background: #fff;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
+}
+
+.info h4 {
+	padding-top: 30px;
+	text-align: center
+}
+.info p{
+	padding: 0 10px;
+	text-align: center;
+}
+.left,.right{	
+	width:35px;
+	height:35px;
+	background: #fb4b09;
+	border-radius: 50%;
+	outline: none;
+}
+.txt{
+	position: relative;
+	top:2%;
+	left:8%;
+	right: 5%;
+}
+
+.ban_list{
+	margin: 20px 0 0;
+	width: 100%;
+	height: 420px;
+	background: #fff;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
+}
+.avatar object{
+	width: 30px;
+	height: 30px;
+	margin: 10px 27px;
+}
+.baninfo {
+	font-size: 11px;
+	margin-top: -10px;
+}
+.baninfo  h5{
+	font-size: 13px;
+}
+.buttons{
+	display: block;
+	width: 100%;
+	position: relative;
+}
+.butnext{
+	position:relative;
+	width: 100%;
+	height: 40px;
+	/*margin-top:-3px;*/
+	display: block;
+	border-radius: 0px;
+	background:  #fb4b09;
+}
+h4{
+	padding: 5px 30%;
+}
+.ban_list .row{
+	height: 45px;
+}
+/*@media screen and (min-width:1440px)and (max-width:1600px){
+	
+	
+}*/
+@media screen and (min-width:1270px)and (max-width:1440px){
+	.info p{
+		font-size:15px;
+	}
+	
+}
+@media screen and (min-width:1025px) and (max-width:1310px){
+	.info p{
+		font-size: 13px;
+	}
+	.blockban{
+		width: 105%;
+	}
+}
+@media screen and (max-width:1090px) and (min-width:1024px){
+	h4{
+	padding: 5px 26%;
+}
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+	.info p{
+		font-size: 12px;
+	}
+	.blockban{
+		width: 115%;
+		right: 50px;
+	}
+	.left,.right{	
+		width:30px;
+		height:30px;
+	}
+	}
+	.txt{
+		position: relative;
+		top:7px;
+		right: 5px;
+	}
+	.right{
+		position: relative;
+		right: 10px;
+	}
+	h4{
+		padding: 5px 20%;
+	}
+	.baninfo{
+		height: 50px;
+	}
+	.baninfo h5{
+		font-size: 11px;
+	}
+	.baninfo p{
+		font-size: 9px;
+	}
+	
+}
+
+@media screen and (min-width:768px) and (max-width:800px){
+	h4{
+		padding: 5px ;
+	}
+	.info p{
+		font-size: 10px;
+	}
+	
+	
+}
+
+@media screen and (max-width:767px) and (min-width:426px){
+	h4{
+		padding: 5px 20%;
+	}
+	.info p{
+		font-size: 10px;
+	}
+	.blockban{
+		width: 180%;
+		position: relative;
+		right: 55px;
+	}
+	.left,.right{
+		position: relative;
+		width:20px;
+		height:25px;
+	}
+	.left{
+		left: 10px;
+	}
+	.info{
+		width: 115%;
+		height: 180px;
+	}
+	.buttons{
+		left: 6%;
+	}
+	.txt{
+		left: 6px;
+	}
+	
+	
+}
+@media screen and (min-width:376px)and (max-width: 425px){
+	h4{
+		padding: 5px 16%;
+		font-size: 12px;
+	}
+	.info p{
+		font-size: 8px;
+	}
+	.blockban{
+		width: 200%;
+		right: 50px;
+	}
+	.info{
+		width: 130%;
+		height: 180px;
+	}
+	.left,.right{
+		position: relative;
+		width:15px;
+		height:25px;
+	}
+	.txt{
+		top:10px;
+		right: 10px;
+	}
+	.right{
+		top:10px;
+		right: 30px;
+	}
+	.avatar object{
+		position: relative;
+		width: 20px;
+		height: 23px;
+		right: 25px;
+	}
+	.baninfo{
+		position: relative;
+		right: 10px;
+		
+	}
+	.ban_list{
+		height: 380px;
+	}
+	.ban_list .row{
+			height: 36px;
+		}
+	.baninfo h5{
+		font-size: 9px;
+	}
+	.baninfo p{
+		width: 50px;
+		font-size: 7px;
+		left: 10px;
+	}
+	
+}
+
+
+
+.end {
+	height: 100px;
+	background: #3c3c3c;
+	width: 100%;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	
+}
+.end p{
+	color: #fff;
+	font-size: 11pt;
+	margin-left: 130pt;
+	margin-top: 25pt;
+}
+.belem{
+	position: absolute;
+	z-index: 100;
+	margin-top: -300pt;
+}
+.elem{
+	position: absolute;
+	width: 200pt;
+	height: 150pt;
+	padding: 20pt 10pt 20pt;
+	z-index: 100;
+	background: #fff;
+}
+
+
