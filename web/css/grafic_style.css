@@ -1,0 +1,22 @@
+.nav{
+	width:90%
+}
+.navbar{
+	box-shadow: 0 1px 5px rgba(0, 0, 0, .5);
+}
+.navbar-brand object{
+	width: 31pt;
+	height: 33pt;
+	margin-top: -8pt;
+	
+}
+.nav object{
+	display: inline-block;
+		vertical-align: middle
+}
+#profile_picture{
+	border-radius: 100%;
+}
+.stylpinhed{
+	vertical-align: middle
+}

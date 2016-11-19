@@ -1,4 +1,5 @@
 <?php
+
 /* @var $this \yii\web\View */
 /* @var $content string */
 
@@ -8,9 +9,7 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
-$bundle = AppAsset::register($this);
-var_dump($bundle->depends);
-
+AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
