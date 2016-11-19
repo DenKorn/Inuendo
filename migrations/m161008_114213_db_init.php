@@ -13,6 +13,7 @@ class m161008_114213_db_init extends Migration
 
         $this->createTable('user', [
             'id' => 'INT UNSIGNED NOT NULL AUTO_INCREMENT',
+            'access' => 'INT UNSIGNED NOT NULL DEFAULT 0 ',
             'name' => 'VARCHAR(45) NOT NULL',
             'login' => 'VARCHAR(45) NOT NULL',
             'password' => 'VARCHAR(45) NULL',
