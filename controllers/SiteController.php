@@ -13,6 +13,9 @@ class SiteController extends Controller
 {
     public function actionIndex()
     {//ToDO goto landing page
+
+
+        $this->layout = 'no_header.php'; //установка шаблона, не имеющего хедера
         return $this->render('index');
     }
 
