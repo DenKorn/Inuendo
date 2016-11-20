@@ -15,11 +15,13 @@ $bundle = SiteAsset::register($this);
         <?php $this->head() ?>
     </head>
     <?php $this->beginBody() ?>
+    <body>
     <div class="container-fluid">
         <?= $content ?>
         <?php $this->beginContent('@app/views/layouts/footer.php'); ?>
         <?php $this->endContent(); ?>
     </div>
     <?php $this->endBody() ?>
+    </body>
     </html>
 <?php $this->endPage()  ?>

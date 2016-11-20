@@ -11,7 +11,18 @@ class ProfileController extends \yii\web\Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        $this->layout = "header_public.php";
+        //for test
+        $testMode = 1;
+        switch ($testMode) {
+            case 1 :
+                return $this->render("profile_foreign");
+            case 2 :
+                return $this->render("profile_own");
+        }
+        ////
+
+        return 0;
     }
 
     public function actionUpdate()

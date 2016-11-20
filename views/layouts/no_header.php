@@ -14,6 +14,7 @@ $bundle = SiteAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
+<body>
 <?php $this->beginBody() ?>
 <div class="container-fluid">
     <?= $content ?>
@@ -21,5 +22,6 @@ $bundle = SiteAsset::register($this);
     <?php $this->endContent(); ?>
 </div>
 <?php $this->endBody() ?>
+</body>
     </html>
 <?php $this->endPage()  ?>

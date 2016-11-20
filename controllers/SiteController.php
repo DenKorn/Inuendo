@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 
+use Faker\Provider\cs_CZ\DateTime;
 use Yii;
 use yii\web\Controller;
 use app\models\Signup;
@@ -12,21 +13,15 @@ use app\models\Login;
 class SiteController extends Controller
 {
     public function actionIndex()
-    {//ToDO goto landing page
-
-
+    {
         $this->layout = 'no_header.php'; //установка шаблона, не имеющего хедера
         return $this->render('index');
     }
 
-    public function actionHelp()
-    {//ToDo goto help page
-        return $this->render('index');
-    }
-
-    public function actionStub($publishingAt) //время, на которое понадобится установить таймер
-    {//ToDo страница, загружающаяся для всех разделов, еще не реализованных
-        return $this->render('index');
+    public function actionStub($publishdate) //время, на которое понадобится установить таймер ("2016-11-11 12:00:00")
+    {
+        //test link: http://localhost/Inuendo/web/site/stub?publishdate=2016-12-29 12:00:00
+        return $this->renderPartial('stub',["publishDate" => $publishdate]);
     }
 
     public function actionLogout()

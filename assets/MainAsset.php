@@ -4,17 +4,17 @@ namespace app\assets;
 
 use yii\web\AssetBundle;
 
-class SiteAsset extends AssetBundle
+class MainAsset extends AssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/font-awesome.css'
+        'css/style-main.css',
     ];
     public $js = [
+
     ];
     public $depends = [
-        'app\assets\AppAsset',
-        'app\assets\IECompatabilityAsset'
+        'app\assets\SiteAsset',
     ];
 }
