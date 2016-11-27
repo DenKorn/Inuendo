@@ -1,0 +1,191 @@
+
+#ad-current{
+	float: right;
+	padding: 15px;
+	margin-right: 20%;
+	font-weight: 600;
+	font-size: 12pt;
+}
+@media screen and (max-width: 991px){
+	#ad-current{
+		margin-right: 0;
+		float: left
+		}
+}
+.main{
+	margin-top: 51px;
+	background: #e6e6e6;
+}
+
+/*  burger-styles  */
+
+label{
+	position: absolute;
+	z-index: 1;
+	cursor: pointer;
+	margin-left: 3%
+}
+#burger{
+	display: none;
+	cursor: pointer;
+}
+.line{
+	position: relative;
+	left: 0px;
+	width:20px;
+	height: 3px;
+	margin: 2px;
+	background: black;
+	opacity: 1;
+	transition: 0.2s;
+}
+.subline1,.subline2{
+	position: absolute;
+	width:10px;
+	top:5px;
+	transition: 0.3s;
+}
+#burger:checked ~ label .line1{
+	left:-20px;
+	opacity: 0;
+	background: white;
+}
+#burger:checked ~ label .line3{
+	left:20px;
+	opacity: 0;
+	background: white;
+	
+}
+#burger:checked ~ label .line2{
+	background: white;
+}
+#burger:checked ~ label .subline1{
+	top:2px;
+	transform: rotate(-40deg);
+	background: white;
+}
+#burger:checked ~ label .subline2{
+	top:8px;
+	transform: rotate(40deg);
+	background: white;
+}
+
+#burger:checked ~ label ~.sidepanel-in{
+	left: 0;
+}
+
+/*  end  */
+
+/*sidebar*/
+.sidepanel{
+	padding-top: 20px;
+	min-height: 813px;
+}
+.sidepanel-in{
+   background: #3c3c3c;
+   position: absolute;
+   top:0;
+   left:-300px;
+   transition: left 0.2s;
+   height: 100%;
+	color: white;
+}
+#main-menu,#resolution-menu{
+	list-style: none;
+	padding: 5px;
+	padding-top: 50%;
+	font-weight: 600;
+	height: 80%;
+}
+#resolution-menu{
+	padding-top: 0;
+}
+#main-menu li{
+	margin-bottom: 20px;
+	text-align: center;
+	display: inline-block;
+	width:100%;
+	padding: 10px 0;
+	cursor: pointer;
+}
+#main-menu li:hover{
+	background: #555555;
+}
+#resolution-menu{
+	padding: 0px;
+	margin: 0;
+	height: 80%;
+	background: #59ce9e;	
+}
+#resolution-menu li{
+	padding: 10px;
+    cursor: pointer
+}
+#resolution-menu p{
+	text-align: center;
+}
+.sidepanel footer{
+	
+	display:flex;
+	align-items: center;
+	margin-top: -10px;
+	background: white;
+	min-height: 163px;
+	
+}
+#add{
+	opacity: 0.1;
+	color:black;
+	text-align: center;
+	height: 62px;
+	line-height: 65px;
+	transform: rotate(45deg);
+	outline:1px solid black;
+}
+#add span{
+	display: block;
+	transform: rotate(-45deg)
+}
+.res{
+	background: white;
+	margin-bottom: 20%
+}
+.current{
+	background: #3c3c3c;
+}
+#res14{
+	height: 100px;
+}
+#res41{
+	height: 40px;
+}
+#res44{
+	height: 70px;
+}
+#res43{
+	height: 50px;
+}
+/*end*/
+#create-area{
+	min-height: 650px; 
+}
+#connections{
+	min-height: 813px; 
+	background: #a7a7a7;
+}
+#moke-ups{
+	display: flex;
+	align-items: center;
+	list-style: none;
+	
+}
+#moke-ups li{
+	margin: 30px 30px 0px;
+	background: black;
+	opacity: 0.4;
+	height: 100px;
+	cursor: pointer
+}
+#moke-ups li:hover{
+	opacity: 1
+}
