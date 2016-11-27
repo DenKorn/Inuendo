@@ -26,6 +26,7 @@ class ManagementController extends \yii\web\Controller
 
     public function actionIndex()
     {
+        $this->layout = "header_admin";
         return $this->render('index');
     }
 
