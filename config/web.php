@@ -24,7 +24,7 @@ $config = [
             ],
         ],
         'request' => [
-            'cookieValidationKey' => 'shit'
+            'cookieValidationKey' => '...',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',

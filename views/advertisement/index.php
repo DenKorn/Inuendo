@@ -1,5 +1,7 @@
 <?php
-/* @var $this yii\web\View */
+
+use app\assets\AdvAsset;
+AdvAsset::register($this);
 ?>
 <h1>advertisement/index</h1>
 
