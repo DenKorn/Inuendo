@@ -15,7 +15,7 @@ class AdvertisementController extends \yii\web\Controller
     }
 
     //Получение фрейма для отображения реклам
-    public function actionIndex()
+    public function actionIndex($id)
     {
         return $this->renderPartial('index');
     }

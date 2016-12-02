@@ -1,0 +1,5 @@
+
+function func() {
+    alert('lol');
+}
+
