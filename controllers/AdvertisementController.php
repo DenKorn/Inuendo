@@ -17,7 +17,9 @@ class AdvertisementController extends \yii\web\Controller
     //Получение фрейма для отображения реклам
     public function actionIndex($id)
     {
-        return $this->renderPartial('index');
+        //Yii::$app->response->set
+        $adConfig = '{}';
+        return $this->renderPartial('index',['id' => $id, 'adConfig' => $adConfig]);
     }
 
     //загрузка структуры рекламы, обьектов переходов и экшнов, все ссылки на файлы абсолютны
