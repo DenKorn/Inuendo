@@ -1,0 +1,24 @@
+.notificationbl{
+	position: fixed;
+	width: 20%;
+	height: 200px;
+	left: 70%;
+	top:7.8%;
+	background:#363636;
+	z-index: 0;
+	opacity: 0;
+	transition: 0.2s ease-in;
+}
+.notificationbl li{
+	position: relative;
+	display: block;
+	height: 50px;
+	border-bottom: 1px solid #c9c9c9;
+	left: -40px;
+	width: 117%;
+	cursor: pointer;
+}
+.activ-notification{
+	z-index: 2;
+	opacity: 1;
+}

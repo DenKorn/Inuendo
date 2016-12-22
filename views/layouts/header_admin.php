@@ -27,16 +27,25 @@ $bundle = SiteAsset::register($this);
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="landing.html">
+                        <a class="navbar-brand" href="site">
                             <object class="logotip" data="<?=$bundle->baseUrl?>/images/logotip.svg" type="image/svg+xml"></object>
                         </a>
                     </div>
 
                     <div class="collapse navbar-collapse" id="responsive-menu">
                         <ul class="nav navbar-nav" >
-                            <li ><a href="adminpage1.html">Менеджмент</a></li>
-                            <li><a href="adminpage2.html">Техподдержка</a></li>
-                            <li><a href="adminpage3.html">Модерация</a></li>
+                            <li ><a href="management">Менеджмент</a></li>
+                            <li><a href="support">Техподдержка</a></li>
+                            <li><a href="moderation">Модерация</a></li>
+
+                            <li class="navbar-right">
+                                <a style ="padding: 0" href="profile">
+                                    <img id="profile_picture" src="<?=$bundle->baseUrl?>/images/profile-picture.svg"/>
+                                    <span class="stylpinhed">Admin</span></a>
+                            </li>
+                            <li class="navbar-right">
+                                <img style="cursor:pointer" onclick="opennotification()" src="images/bell_unactive.svg"/>
+                            </li>
                         </ul>
                     </div>
                 </div>

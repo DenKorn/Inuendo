@@ -14,8 +14,9 @@ a:hover{
 	color: white;
 	
 }
+
 #block1 {
-	background:  url(../images/baba_s_ayfonom.jpg);
+	background:  url(images/baba_s_ayfonom.jpg);
 	height: 600px;
 	background-size: cover;
 	overflow-x: hidden;
@@ -94,7 +95,7 @@ a:hover{
 .polygon object{
 	display: block;
 	margin: 20px auto;
-	width:70%;
+	width:150px;
 	height: 150px;
 	
 
@@ -112,14 +113,14 @@ a:hover{
 	position: absolute;
 	
 }
-.adhead {
+.inuendo-adhead {
 	
 	position: relative;
 	background: rgb(240, 101, 39);
 	width: 100%;
 	height: 4px;
 }
-.adbody {
+.inuendo-adbody {
 	background: #ffffff;
 	height: 320px;
 	margin-top: 35%;
@@ -144,7 +145,7 @@ a:hover{
 	height: 50px;
 	min-width: 110px;
 }
-.adhead p{
+.inuendo-adhead p{
 	text-align:center;
 	padding: 15% 10%;
 	font-size: 80%;
@@ -162,10 +163,10 @@ a:hover{
 		line-height: 20px;
 		height: 30px;
 	}
-	.adhead p{
+	.inuendo-adhead p{
 		font-size: 8pt;
 	}
-	.adbody{
+	.inuendo-adbody{
 		max-height: 300px;
 	}
 	.polygon object{
@@ -174,16 +175,16 @@ a:hover{
 	
 }
 @media screen and (min-width: 1600px){
-	.adhead p{
+	.inuendo-adhead p{
 		font-size: 100%;
 		padding: 20px 10px 0px;
 	}
 }
 @media screen and (max-width: 810px){
-.adhead p{
+.inuendo-adhead p{
 	font-size: 50%;
  }
-	.adbody{
+	.inuendo-adbody{
 		max-height: 200px;
 		
 	}
@@ -202,9 +203,7 @@ a:hover{
 	}
 }
 @media screen and (max-width: 900px)and(min-width:701){
-	.polygon object{
-		height: 280px;
-	}
+	
 }
 @media screen and (max-width: 700px){
 	.advantages{
@@ -224,9 +223,7 @@ a:hover{
 		font-size: 9pt;
 		padding: 10px 50px;
 	}
-	.polygon object{
-		height: 280px;
-	}
+	
 }
 @media screen and (max-width: 400px){
 	.adbody p{
@@ -234,6 +231,7 @@ a:hover{
 		padding: 5px;
 	}
 }
+
 .someone {
 	margin: 0 auto;
 
@@ -332,7 +330,6 @@ a:hover{
     top:26%;
 	transition: left 0.3s;
 }
-
 .check_btn {
 	width: 150pt;
 	background: url(/images/poz.png);
@@ -342,7 +339,6 @@ a:hover{
 	border-radius: 0%;
 	font-size: 10pt;
 	padding: 5px 0px 5px 0px;
-    color: #fff;
 	
 }
 .check_btn a{
@@ -394,21 +390,26 @@ a:hover{
 	padding: 20px;
 	line-height: 25px;
 }
-@media screen and (min-width:1360px){
-	#block5 object{
-	width:200px;
-}
-}
-@media screen and (max-width:1440px){
-	.bl4_cont{
-		width: 250px;
-		right: 25px;
-	}
-}
+
 @media screen and (max-width:1380px){
 	#place,#contacts{
 	font-size: 8pt
+	}
+	
 }
+
+@media screen and (max-width:1100px){
+
+	.polygon object{
+		width: 120px;
+		height: 120px;
+	}
+}
+@media screen and (max-width:950px){
+	.polygon object{
+		width: 110px;
+		height: 110px;
+	}
 }
 @media screen and (max-width:800px){
 	#place,#contacts{
@@ -417,27 +418,24 @@ a:hover{
     }
 	
 }
+
 @media screen and (max-width:800px)and (min-width:760px){
 	#place,#contacts{
 	 font-size: 10pt;
     }
-	
-}
-@media screen and (max-width:425px){
-	.bl4_cont{
-		left: 70px;
+	polygon object{
+		width: 110px;
+		height: 110px;
 	}
 }
-@media screen and (max-width:375px){
-	.bl4_cont{
-		left: 45px;
-	}
-}
+
 @media screen and (max-width:320px){
-	.bl4_cont{
-		left: 22px;
+	
+	.aboutustext p{
+		font-size: 14px;
 	}
 }
+
 #block5 a{
 	color:rgb(240, 101, 39);
 	cursor:pointer;

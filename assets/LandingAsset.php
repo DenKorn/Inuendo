@@ -10,6 +10,8 @@ class LandingAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/landing_style.css',
+        'css/font-awesome.css'
+
     ];
     public $js = [
         'js/script.js'

@@ -35,6 +35,7 @@ object{
 .stylpinhed{
 	vertical-align: middle
 }
+
 #block1 {
 	background: white;
 	min-height: 380px;
@@ -241,9 +242,12 @@ h3{
 	margin-top: 13px;
 }
 .circle object{
-	width: 90pt;
-	height: 90pt;
-	margin: 0 auto
+	display: block;
+	margin: 30px auto;
+	width: 85pt;
+	height: 85pt;
+	border-radius: 50%;
+	border: 2px solid white;
 }
 .zagh3 {
 	font-size: 15pt;

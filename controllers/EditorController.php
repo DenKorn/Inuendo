@@ -21,7 +21,7 @@ class EditorController extends \yii\web\Controller
 
     public function actionIndex()
     {
-        $this->layout = 'header_public.php';
+        $this->layout = 'no_header.php';
         return $this->render('index');
     }
 

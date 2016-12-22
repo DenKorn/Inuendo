@@ -72,4 +72,6 @@ class SiteController extends Controller
         return $this->render('login',['login_model'=>$login_model]);
     }
 
+
+
 }

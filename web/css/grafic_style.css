@@ -1,3 +1,9 @@
+body{
+	-webkit-user-select:none;
+	cursor: default;
+	overflow-x: hidden;
+}
+/*Оформление хедера*/ 
 .nav{
 	width:90%
 }
@@ -14,9 +20,247 @@
 	display: inline-block;
 		vertical-align: middle
 }
-#profile_picture{
-	border-radius: 100%;
+	
+/*Общеее офомления бока1*/
+.block1{
+	margin-top: -20px;
+	min-height: 1550px;
+	background: #a7a5a5;
 }
-.stylpinhed{
-	vertical-align: middle
+/*Блок выбра реклам*/
+.selection{
+	background: #fff;
+	min-height: 1550px;
+}
+/*Блок самой рекламы*/
+.choose{
+	height: 150px;
+	border-bottom: 1px solid rgba(177, 177, 177, 0.53);
+	cursor: pointer;
+}
+.title{
+	width: 120px;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.strl_text{
+	height: 80px;
+	position: relative;
+	top:50px;
+}
+.strelka {
+	position: relative;
+	left: 20px;
+	width: 50px;
+	height: 50px;
+}
+.text {
+	padding-top:40px;
+	font-size: 14px;
+	width: 95pt;
+	position: relative;
+	right: 20px;
+}
+.choose:hover{
+	background: #f8f8f8; 
+	/*box-shadow: 0px -2px 3px rgba(0, 0, 0, .5);	*/
+}
+/*Checkboxs*/
+.checkbox {
+	vertical-align: top;
+	margin: 0 3px 0 0;
+	width: 11px;
+	height: 11px;
+}
+/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+селекторы с плюсом. Показываем, что label кликабелен. */
+.checkbox + label {
+  cursor: pointer;
+}
+
+/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+в них все нижеследующие стили не сработают. */
+
+/* Прячем оригинальный чекбокс. */
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox:not(checked) + label {
+  position: relative; /* будем позиционировать псевдочекбокс относительно label */
+  padding: 0 0 0 60px; /* оставляем слева от label место под псевдочекбокс */
+}
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 19px;
+  left: 45px;
+  width: 33px;
+  height: 18px;
+  border-radius: 13px;
+  background: #f0f0f0;
+ /* box-shadow: inset 0 2px 3px rgba(0,0,0,.2);*/
+}
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 19px;
+  left: 46px;
+  width: 18px;
+  height: 18px;
+  border-radius: 10px;
+  background: #58e0a8;
+
+  transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+}
+/* Меняем фон чекбокса, когда он включен. */
+.checkbox:checked + label:before {
+  background: #363636;
+}
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.checkbox:checked + label:after {
+  left: 61px;
+}
+/* Показываем получение фокуса. */
+
+/*офрмлкния блока с плюсом*/
+.add{
+	height: 300px;
+}
+.add object{
+	position: relative;
+	left: 25%;
+	top:20%;
+	width: 45%
+}
+/*Раота с графиками*/
+/*Верхняя часть с логотипом и названием и описанием рекламы(можно изменять)*/
+.about{
+	position: relative;
+	top:30px;
+	height: 270px;
+	margin-bottom: 15px
+}
+.log{
+	background: #363636;
+	height: 220px;
+}
+.redaction h4{
+	padding-top: 3px;
+	text-align: center;
+	height: 25px;
+	margin-top: 0px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	outline: none;
+	transition: 0.2s ease-in;
+	
+}
+.redaction p{
+	transition: 0.1s ease-in;
+	outline: none;
+	text-align: left;
+}
+.about p {
+	text-align: center;
+	height: 125px;
+	text-overflow: clip;
+	overflow: hidden;
+}
+.about p:focus{
+	background: #fff;
+	text-align: left;
+}
+.redaction h4:focus{
+	background: #fff;
+	text-align: left;
+}
+.redaction{
+	height: 220px;
+	z-index: 2;
+}
+
+.redact {
+	width: 100%;
+	height: 50px;
+	border-radius: 0px;
+	text-align: center;
+	background: #59ce9e;
+	color: white;
+	border: none;
+	outline: none;
+} 
+.redact:hover{
+	background: #31a878;
+	color:white;
+}
+/*Поля с графиками*/
+.field{
+	height: 290px;
+	margin-top: 10px;
+	background: #fff;
+	width: 106%;
+}
+.information{
+	z-index: 1;
+	height: 290px;
+	margin-top: -10px;
+	background: #fb4b09;
+}
+.wrap{
+	margin: 0 auto;
+	width: 80%;
+	height: 250px;
+}
+.wrap h1, .wrap h4{
+	position: relative;
+	top:35%;
+	text-align: center;
+	color:white;
+}
+.wrap .statistika{
+	position: relative;
+	top:100px;
+	height: 40px;
+	background:#ff875a;
+	border-radius: 0px;
+	border: none;
+	display: inline-block;
+	
+}
+.statistika p{
+	text-align: center;
+	color: white;
+	position: relative;
+	top:10px;
+}
+ .statistika{
+	width: 30%;
+	
+}
+.statistika:last-child{
+	width: 65%;
+}
+/*Оформленеи футера*/ 
+.foot{
+	min-height: 110px;
+	background: #363636;
+}
+.foot p{
+	padding: 15px;
+	color: #fff;
+	text-align: center;
+	
+}
+.foot a{
+	cursor: pointer;
+		color: grey;
+}
+.foot a:hover{
+ text-decoration: none;
+	color:white
 }

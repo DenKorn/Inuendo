@@ -10,6 +10,7 @@ class MainAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/style-main.css',
+        'css/scrollfield.css'
     ];
     public $js = [
 

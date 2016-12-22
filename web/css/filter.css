@@ -1,0 +1,24 @@
+.filtfield{
+	width: 20%;
+	height: 200px;
+	position: absolute;
+	background: #363636;
+	transition: 0.2s ease-in;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
+	z-index: 0;
+	opacity: 0;
+}
+.activ-filt{
+	z-index: 2;
+	opacity: 1;
+}
+.filtfield li{
+	display: block;
+	height: 40px;
+	position: relative;
+	left: -40px;
+	width: 125%;
+	color:white;
+	border-bottom: 1px solid #918e8e;
+	cursor: pointer;
+}

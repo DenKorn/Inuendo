@@ -1,6 +1,7 @@
 <?php
 use yii\helpers\Html;
 use app\assets\SiteAsset;
+
 $bundle = SiteAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -27,22 +28,22 @@ $bundle = SiteAsset::register($this);
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="landing.html">
+                        <a class="navbar-brand" href="site">
                             <object class="logotip" data="<?=$bundle->baseUrl?>/images/logotip.svg" type="image/svg+xml"></object>
                         </a>
                     </div>
                     <div class="collapse navbar-collapse" id="responsive-menu">
                         <ul class="nav navbar-nav" >
                             <li class="navbar-right">
-                                <a style ="padding: 0" href="personalarea.html">
+                                <a style ="padding: 0" href="profile">
                                     <img id="profile_picture" src="<?=$bundle->baseUrl?>/images/profile-picture.svg"/>
-                                    <span class="stylpinhed">example22</span></a>
+                                    <span class="stylpinhed">Admin</span></a>
                             </li>
                             <li class="navbar-right">
-                                <img src="<?=$bundle->baseUrl?>/images/bell_unactive.svg"/>
+                                <img style="cursor:pointer" onclick="opennotification()" src="images/bell_unactive.svg"/>
                             </li>
-                            <li ><a href="main.html">Главная</a></li>
-                            <li><a href="main.html">Управление рекламами</a></li>
+                            <li ><a href="main">Главная</a></li>
+                            <li><a href="grafic">Управление рекламами</a></li>
                            <!-- <li class="center" id="ad-current">Название рекламы</li>  todo: заменить раздел функциональным пустым тегом, который в разных разделах будет заполняться на стороне клиента -->
                         </ul>
                     </div>

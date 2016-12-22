@@ -12,6 +12,7 @@ class SiteAsset extends AssetBundle
         'css/font-awesome.css'
     ];
     public $js = [
+        'js/script.js'
     ];
     public $depends = [
         'app\assets\AppAsset',
