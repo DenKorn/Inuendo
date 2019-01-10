@@ -3,7 +3,7 @@ Inuendo interactive advertisement service
 
 This project has started as collective coursework for site developing. This project does not claim originality and manufacturability. But you can whatever star this project's repository! :)
 
-INSTALLATION
+INSTALLATION GUIDE
 ------------
 
 Firstly, you may download project from this repository. After this, you should create database and do appropriate configuration of in in "config/db.php".
